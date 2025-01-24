@@ -20,3 +20,10 @@ modal.addEventListener("click", function(event) {
     modal.style.display = "none";
   }
 });
+
+var projectCards = document.querySelectorAll('.project-card');
+projectCards.forEach(function(card) {
+    card.addEventListener('click', function() {
+        showImage(card.querySelector('.project-icon'));
+    });
+});
