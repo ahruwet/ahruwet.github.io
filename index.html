@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
+		<link rel="icon" href="images/mylogo.jpg">
+
+		<link rel="stylesheet" href="style/animation.css">  
+		<link rel="stylesheet" href="style/global.css">
+		<link rel="stylesheet" href="style/top_nav.css">
+		<link rel="stylesheet" href="style/profile.css">
+		<link rel="stylesheet" href="style/about.css">
+		<link rel="stylesheet" href="style/skills.css">
+		<link rel="stylesheet" href="style/contact.css">
+		<link rel="stylesheet" href="style/projects.css">
+		<link rel="stylesheet" href="style/footer.css">
+		<link rel="stylesheet" href="style/images.css">
+		<title>Aurindra</title>
+	</head>
+	<body>
+		<div id="modal" class="modal">
+			<span class="close">&times;</span>
+			<img class="modal-content" id="modalImg">
+			<div id="caption"></div>
+		</div>
+		<div class="main-wrapper">
+			<!-- TOP-NAVIGATION -->
+			<nav class="top-nav">
+				<ul>
+					<li class="nav home">
+						<a href=""><p>Home</p> <img class="nav-icon" src="images/icons/home-icon.png" alt=""></a>
+					</li>
+					<li class="nav about">
+						<a href="#about-section"><p>About</p> <img class="nav-icon" src="images/icons/about-icon.png" alt=""></a>
+					</li>
+					<li class="nav skills">
+						<a href="#skills-section"><p>Skills</p> <img class="nav-icon" src="images/icons/skill-icon.png" alt=""></a>
+					</li>
+					<li class="nav project">
+						<a href="#projects-section"><p>Project</p> <img class="nav-icon active" src="images/icons/projects-icon.png" alt=""></a>
+					</li>
+				</ul>
+				<a href="#contact-section" id="let-connect-btn">RING ME</a>
+			</nav>
+			<main>
+				<!-- PROFILE CARD -->
+				<div class="profile-container fixed ">
+					<img src="images/my.jpg" alt="" class="profile-pic">
+					<h3 class="name">Aurindra || ruwet</h3>
+					<p class="short-about-me">Mahasiswa dan Developer FiveM</p>
+
+					<nav class="social-media-nav">
+						<ul>
+							<li>
+								<a href="https://www.instagram.com/awrindra/"><img src="images/icons/instagram.png" alt="insta-icon"></a>
+							</li>
+							<li>
+								<a href="https://github.com/ahruwet/"><img src="images/icons/github (2).png" alt="insta-icon"></a>
+							</li>
+							<li>
+								<a href="https://discord.com/users/1031174441587191919" target="_blank">
+								  <img src="images/icons/discord.png" alt="discord-icon">
+								</a>
+							</li>
+						</ul>
+					</nav>
+				</div>
+
+				<div class="section-container">
+					<!-- ABOUT SECTION -->
+					<section id="about-section" class="section about">
+						<h1 class="heading">FiveM<br><span>DEVELOPER</span></br></h1>
+						<p class="more-about-me">
+							Saya adalah mahasiswa aktif semester 5 di UNIKOM Bandung dan seorang developer FiveM. 
+							Awal perjalanan karierku dimulai di KOTAKITA ROLEPLAY sebagai full stack developer, dan kini 
+							aku menjadi full stack developer di SILENT ROLEPLAY. Dengan pengalaman 
+							lebih dari 3 tahun di dunia development FiveM, Fokusku lebih sering pada 
+							kustomisasi script, menghadirkan fitur yang disesuaikan untuk memenuhi kebutuhan komunitas.
+						</p>
+	
+						<div class="years-of-doing d-grid">
+							<div class="experience">
+								<h3 class="years">+3</h3>
+								<p>Tahun <br>Pengalaman</br></p>
+							</div>
+							<div class="projects">
+								<h3 class="years">+20</h3>
+								<p>Projek <br>Dikerjakan</br></p>
+							</div>
+							<!-- <div class="clients">
+								<h3 class="years">+3</h3>
+								<p>Klien</p>
+							</div>    -->
+						</div>
+					</section>
+					
+					<!-- SKILL SECTION -->
+					<section id="skills-section" class="section skills">
+						<h1 class="heading"> SPECIALIZED <br><span>SKILLS</span></br></h1>
+						<button class="tech-stacks-btn selected">LANGUANGE</button>
+						<button class="tools-btn">TOOLS & FRAMEWORK</button>
+	
+						<div class="skills-container tech-stack-skills d-grid">
+							<!-- add and delete skills on skills.js -->
+						</div>
+						<div class="skills-container tools-skills d-grid">
+								<!-- add and delete skills on skills.js -->
+						</div>
+					</section>
+	
+					<!-- PROJECT SECTION -->
+					<section id="projects-section" class="section project">
+						<h1 class="heading"> RECENT<br><span>PROJECTS</span></br></h1>
+
+						<div class="projects-container">
+							<div class="project-card">
+								<img src="images/project/hp.png" alt="project ZPhone" class="project-icon" onclick="showImage(this)">
+								<div class="title-description-container">
+								  	<h4 class="project-title">ZPhone</h4>
+								  	<p class="project-description">Modify add feature share location in chat and App service</p>
+								</div> 
+								<a href="https://github.com/ahruwet/z-phone" target="_blank">
+								  	<img class="arrow-icon" src="images/icons/up-right-arrow.png" alt="arrow-icon" >
+								</a>
+							</div>
+						  	<div class="project-card">
+								<img src="images/project/imagelobby.png" alt="project lobby" class="project-icon" onclick="showImage(this)">
+								<div class="title-description-container">
+								  	<h4 class="project-title">Lobby Selector</h4>
+								  	<p class="project-description">Creating lobby selector UI for Paletobay Freeroam server</p>
+								</div> 
+							</div>
+						</div>
+					</section>
+	
+					<!-- COTACT SECTION -->
+					<section id="contact-section">
+						<h1 class="heading">CONTACT<br><span> ME</span></br></h1>
+						<form action="mailto:aurindra144@gmail.com">
+						  	<div class="input-container">
+								<input type="text" class="input" placeholder="Name" required>
+								<input type="email" class="input" placeholder="Your@email.com" required>
+						  	</div>    
+						  	<textarea name="" id="message" class="input" placeholder="Message to me" required ></textarea>
+						  	<button class="submit-btn">Submit</button>
+						</form>
+					</section>
+				</div>
+			</main>
+			<footer>
+				<p class="copyright-text"></p>
+
+				<p>Visit me on</p>
+				<nav class="socmed-nav">
+					<nav>
+						<ul>
+							<li>
+								<a href="https://www.instagram.com/awrindra/"><img src="images/icons/instagram.png" alt="insta-icon" class="socmed-icon"></a>
+							</li>
+							<li>
+								<a href="https://www.youtube.com/@awrindra"><img src="images/icons/youtube.png" alt="yt-icon" class="socmed-icon"></a>
+							</li>
+							<li>
+								<a href="https://github.com/ahruwet"><img src="images/icons/github.png" alt="github-icon" class="socmed-icon"></a>
+							</li>
+							<li>
+								<a href="https://discord.com/users/1031174441587191919" target="_blank">
+								  <img src="images/icons/discord.png" alt="discord-icon" class="socmed-icon">
+								</a>
+							</li>
+						</ul>
+					</nav>
+				</nav>
+			</footer>
+		</div>
+
+		<script type="module" src="script/main.js"></script>
+		<script src="script/images.js"></script>
+	</body>
+</html>
