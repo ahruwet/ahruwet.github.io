@@ -48,6 +48,21 @@ export function skillFunctionality(){
       type: 'tool'
     },
     {
+      icon:'images/icons/xammp.png',
+      name: 'XAMPP',
+      type: 'tool'
+    },
+    {
+      icon:'images/icons/fivem.png',
+      name: 'FiveM',
+      type: 'tool'
+    },
+    {
+      icon:'images/icons/redm.png',
+      name: 'RedM',
+      type: 'tool'
+    },
+    {
       icon:'images/icons/esx.png',
       name: 'ESX',
       type: 'tool'
@@ -58,8 +73,18 @@ export function skillFunctionality(){
       type: 'tool'
     },
     {
+      icon:'images/icons/qbox.png',
+      name: 'Qbox',
+      type: 'tool'
+    },
+    {
+      icon:'images/icons/vorp.png',
+      name: 'VORP',
+      type: 'tool'
+    },
+    {
       icon:'images/icons/redm.jpeg',
-      name: 'RedM',
+      name: 'RSG',
       type: 'tool'
     },
     {
@@ -68,10 +93,20 @@ export function skillFunctionality(){
       type: 'tool'
     },
     {
-      icon:'images/icons/xammp.png',
-      name: 'XAMPP',
+      icon:'images/icons/ci.png',
+      name: 'CodeIgniter',
       type: 'tool'
-    }
+    },
+    {
+      icon:'images/icons/laravel.png',
+      name: 'Laravel',
+      type: 'tool'
+    },
+    {
+      icon:'images/icons/hadoop.png',
+      name: 'Hadoop',
+      type: 'tool'
+    },
   ];
 
 
